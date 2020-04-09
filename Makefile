@@ -10,26 +10,23 @@
 subdirs = pyramid
 subdirs_clean = $(addsuffix _clean,$(subdirs))
 
-html: website $(subdirs)
-	@echo Targets: $(targets)
-	
-website:
+html: $(subdirs) index.html
 	mkdir -p html
-	$(MAKE) -C website html
-	cp website/html/* html
+	cp -r shared $(subdirs) index.html html
 	
-$(subdirs):
-	mkdir -p html
-	$(MAKE) -C $@ html
-	cp -r $@/html html/$@
+# TODO: combine this rule with pyramid/Makefile (fix path)
+%.html: %.md
+	pandoc $< -o $@ -t html5 -s --mathjax --css=shared/style.css
 
-website_clean $(subdirs_clean):
+$(subdirs):
+	$(MAKE) -C $@
+
+$(subdirs_clean):
 	$(MAKE) -C $(subst _clean,,$@) clean
 
-clean: website_clean $(subdirs_clean)
-	rm -f $(targets)
+clean: $(subdirs_clean)
 	rm -rf html
 
-.PHONY: html website $(subdirs) website_clean $(subdirs_clean) clean 
+.PHONY: html $(subdirs) $(subdirs_clean) clean 
 
 
