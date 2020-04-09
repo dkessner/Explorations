@@ -1,7 +1,7 @@
 # Explorations
 
 
-[about](about.html)
+[About](about.html)
 
 
 ## Math

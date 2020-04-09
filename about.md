@@ -1,8 +1,3 @@
----
-layout: page
-title: About
-permalink: /about/
----
 
 ## About these pages
 
@@ -28,7 +23,7 @@ I will be making all source code available in the future -- stay tuned.
 
 ## About the author
 
-![Dr. Darren Kessner]({{ site.baseurl }}/assets/darrenkessner.jpg){:width="120px"} 
+![Dr. Darren Kessner](shared/darrenkessner.jpg){width=120px} 
 
 [Dr. Darren Kessner](mailto:Darren.Kessner@marlborough.org) teaches math and
 computer science and serves as Co-Head of the [STEM+
