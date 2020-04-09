@@ -26,6 +26,7 @@ $(subdirs_clean):
 
 clean: $(subdirs_clean)
 	rm -rf html
+	rm index.html
 
 .PHONY: html $(subdirs) $(subdirs_clean) clean 
 
