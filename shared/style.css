@@ -24,6 +24,15 @@ p {
 }
 
 
+#page-container {
+    position: relative;
+    min-height: 90vh;
+}
+
+#content-container {
+    padding-bottom: 5rem;
+}
+
 footer {
     position: absolute;
     bottom: 0;
