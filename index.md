@@ -12,4 +12,5 @@ title: Explorations
 
 * [Pyramid Volume](pyramid)
 * [Central Limit Theorem](clt)
+* [Dandelin Spheres](dandelin)
 
