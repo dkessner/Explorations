@@ -2,15 +2,13 @@
 title: Explorations
 ---
 
-
 [About](about.html)
 
+## Geometry
 
-## Math
+* [Unit Circle](unit_circle)
 
-[Pyramid](pyramid)
+## Trigonometry / Precalculus
 
-
-## Computer Science
-
+* [Pyramid Volume](pyramid)
 

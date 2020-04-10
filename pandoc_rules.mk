@@ -3,14 +3,24 @@
 #
 
 #
-# pandoc md->html
+# pandoc rule md->html
 #
+
+my_dir = $(dir $(realpath $(lastword $(MAKEFILE_LIST))))
 
 %.html: %.md
-	pandoc $< -o $@ -t html5 -s --mathjax --css=/shared/style.css
+	pandoc $< -o $@ -t html5 -s --mathjax --css=/shared/style.css -B $(my_dir)/shared/before_body.html
 
 #
-# default top level rule 'html', run on all .md files;
+# Note: pandoc flag --css should point to absolute path from website root to
+# css file, since this will be converted to an html <style> element to read the
+# .css file.  
+#
+# However, -B (--include-before-body) needs the local path to the 'shared' dir.
+#
+
+#
+# Default top level rule 'html', run on all .md files;
 # 'clean' removes all .html files
 # 
 
@@ -31,10 +41,6 @@ clean:
 # $* stem of implicit rule match 
 # $@ target 
 # $< first prerequisite
-
-# Note: pandoc flag --css should point to absolute path to css file, since we
-# may be building from a subdir.  As a result, web server must be run from root,
-# i.e. it won't work to serve a subdir independently.
 
 # Note: tried to use pandoc default file, but ran into path issues when running
 # pandoc from subdir.

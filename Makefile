@@ -2,7 +2,7 @@
 # Makefile
 #
 
-subdirs = pyramid
+subdirs = unit_circle pyramid
 subdirs_clean = $(addsuffix .clean,$(subdirs))
 
 #
