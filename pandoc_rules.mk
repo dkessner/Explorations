@@ -9,7 +9,7 @@
 my_dir = $(dir $(realpath $(lastword $(MAKEFILE_LIST))))
 
 %.html: %.md
-	pandoc $< -o $@ --resource-path=$(my_dir)/shared --defaults=$(my_dir)/shared/pandoc_html_defaults.yaml
+	pandoc $< -o $@ --resource-path=$(my_dir)/shared --template=$(my_dir)/shared/default.html --defaults=$(my_dir)/shared/pandoc_html_defaults.yaml
 
 #
 # Notes: 

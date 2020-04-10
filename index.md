@@ -1,5 +1,5 @@
 ---
-title: Explorations
+title: _
 ---
 
 [About](about.html)
