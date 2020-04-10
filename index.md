@@ -3,9 +3,6 @@ title: Explorations
 ---
 
 
-# Explorations
-
-
 [About](about.html)
 
 
