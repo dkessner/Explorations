@@ -11,4 +11,5 @@ title: Explorations
 ## Trigonometry / Precalculus
 
 * [Pyramid Volume](pyramid)
+* [Central Limit Theorem](clt)
 
