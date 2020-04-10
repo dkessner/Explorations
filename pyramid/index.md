@@ -1,4 +1,6 @@
-# Pyramid Volume
+---
+title: Pyramid Volume
+---
 
 The volume of a pyramid is $\frac{1}{3}$ the volume of a prism of the same
 height.  This demonstration actually shows a cube being decomposed into 6
