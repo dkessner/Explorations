@@ -1,3 +1,6 @@
+/*
+*  style.css
+*/
 
 
 body {
@@ -11,13 +14,20 @@ p {
 }
 
 
+#banner-link {
+    text-decoration: none;
+    color: black;
+}
+
+
 #banner {
     background: #555;
     top: 0;
     width: 90%;
-    height: 10rem;
+    height: 5rem;
     padding: 5%;
 }
+
 
 #banner h1 {
     font-family: "Courier New", Courier, monospace;
@@ -29,9 +39,11 @@ p {
     min-height: 90vh;
 }
 
+
 #content-container {
     padding-bottom: 5rem;
 }
+
 
 footer {
     position: absolute;

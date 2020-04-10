@@ -1,8 +1,6 @@
 ---
-title: _
+title: Explorations in Math and Code
 ---
-
-[About](about.html)
 
 ## Geometry
 
@@ -14,3 +12,5 @@ title: _
 * [Central Limit Theorem](clt)
 * [Dandelin Spheres](dandelin)
 
+
+[About](about.html)

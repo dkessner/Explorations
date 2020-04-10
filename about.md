@@ -1,5 +1,5 @@
 ---
-title: About
+title: Explorations in Math and Code - About
 ---
 
 ## About these pages
