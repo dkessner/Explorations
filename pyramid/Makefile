@@ -2,6 +2,7 @@
 # Makefile (pyramid)
 #
 
+include ../pandoc_rules.mk
 
 html_targets = $(patsubst %.md,%.html,$(wildcard *.md))
 
@@ -13,8 +14,8 @@ all: $(html_targets)
 #	cp *.html *.pde html
 #	cp ../share/processing.min.js html
 
-%.html: %.md
-	pandoc $< -o $@ -t html5 -s --mathjax --css=../shared/style.css
+#%.html: %.md
+#	pandoc $< -o $@ -t html5 -s --mathjax --css=../shared/style.css
 
 clean:
 	rm -f $(html_targets)
