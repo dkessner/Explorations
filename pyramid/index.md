@@ -10,6 +10,5 @@ height as the pyramid.
 
 Click on graph to activate.
 
-<script src="../shared/processing.min.js"></script>
 <canvas data-processing-sources="pyramid.pde"></canvas>
 

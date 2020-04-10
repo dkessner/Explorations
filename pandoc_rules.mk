@@ -9,14 +9,20 @@
 my_dir = $(dir $(realpath $(lastword $(MAKEFILE_LIST))))
 
 %.html: %.md
-	pandoc $< -o $@ -t html5 -s --mathjax --css=/shared/style.css -B $(my_dir)/shared/before_body.html
+	pandoc $< -o $@ --resource-path=$(my_dir)/shared --defaults=$(my_dir)/shared/pandoc_html_defaults.yaml
 
 #
-# Note: pandoc flag --css should point to absolute path from website root to
+# Notes: 
+#
+# pandoc flag --css should point to absolute path from website root to
 # css file, since this will be converted to an html <style> element to read the
 # .css file.  
 #
-# However, -B (--include-before-body) needs the local path to the 'shared' dir.
+# -B (--include-before-body) needs the local path to the 'shared' dir.
+# When using this in defaults file, pandoc searches "resource path" for the file to include.
+#
+# Command line without defaults file:
+#   pandoc $< -o $@ -t html5 -s --mathjax --css=/shared/style.css -B $(my_dir)/shared/before_body.html
 #
 
 #
