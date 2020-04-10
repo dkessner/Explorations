@@ -23,9 +23,14 @@ html: $(html_targets)
 clean:
 	rm -f $(html_targets)
 
+
 #
 # implementation notes
 #
+
+# $* stem of implicit rule match 
+# $@ target 
+# $< first prerequisite
 
 # Note: pandoc flag --css should point to absolute path to css file, since we
 # may be building from a subdir.  As a result, web server must be run from root,
