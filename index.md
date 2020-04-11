@@ -4,11 +4,12 @@ title: Explorations in Math and Code
 
 ## Geometry
 
-* [Unit Circle](unit_circle)
+* [Pyramid Volume](pyramid)
+
 
 ## Trigonometry / Precalculus
 
-* [Pyramid Volume](pyramid)
+* [Unit Circle](unit_circle)
 * [Central Limit Theorem](clt)
 * [Dandelin Spheres](dandelin)
 
