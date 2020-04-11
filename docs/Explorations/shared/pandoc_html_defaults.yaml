@@ -7,7 +7,7 @@ to: html5
 standalone: true
 
 css:
-- /shared/style.css
+- /Explorations/shared/style.css
 
 include-before-body: [before_body.html]
 

@@ -13,8 +13,9 @@ subdirs_clean = $(addsuffix .clean,$(subdirs))
 #
 
 all: html $(subdirs)
-	mkdir -p html
-	cp -r shared $(subdirs) $(html_targets) html
+	mkdir -p html/Explorations
+	cp -r shared $(subdirs) $(html_targets) html/Explorations
+	find html/Explorations -name '*.md' -delete
 
 #
 # define $(html_targets), html/clean rules for .md files in root dir
