@@ -1,0 +1,69 @@
+/*
+*  style.css
+*/
+
+
+body {
+    background: #ddd url('binary_background.png');
+    margin: 50px;
+}
+
+
+p {
+    width: 80%;
+}
+
+
+#banner-link {
+    text-decoration: none;
+    color: black;
+}
+
+
+#banner {
+    background: #555;
+    top: 0;
+    width: 90%;
+    height: 5rem;
+    padding: 5%;
+}
+
+
+#banner h1 {
+    font-family: "Courier New", Courier, monospace;
+}
+
+
+#page-container {
+    position: relative;
+    min-height: 90vh;
+}
+
+
+#content-container {
+    padding-bottom: 5rem;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    border-style: none;
+}
+
+#footer-container {
+    display: flex;
+}
+
+#footer-left {
+    flex: 50%;
+}
+
+#footer-right {
+    flex: 50%;
+}
+
+
+
