@@ -3,3 +3,4 @@ html
 *.html
 !/shared/*.html
 !/docs/*.html
+!/docs/*/*.html
