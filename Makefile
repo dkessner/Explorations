@@ -17,6 +17,10 @@ all: html $(subdirs)
 	cp -r shared $(subdirs) $(html_targets) html/Explorations
 	find html/Explorations -name '*.md' -delete
 
+docs: all
+	rm -rf docs
+	mv html/Explorations docs
+
 #
 # define $(html_targets), html/clean rules for .md files in root dir
 #
