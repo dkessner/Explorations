@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Dandelin Spheres</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="/Explorations/shared/style.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body id="dk was here">
+<div id="page-container">
+<!--
+    before_body.html
+-->
+
+<a id="banner-link" href="/">
+<div id="banner">
+<h1> Explorations in Math and Code </h1>
+</div>
+</a>
+
+<script src="/Explorations/shared/processing.min.js"></script>
+
+<!--
+<header id="title-block-header">
+<h1 class="title">Dandelin Spheres</h1>
+</header>
+-->
+<div id="content-container">
+<p>This is an interactive demo of <a href="https://en.wikipedia.org/wiki/Dandelin_spheres">Dandelin spheres</a>, showing that the cross section of a cone sliced by a plane is an ellipse. Scroll down for a mathematical explanation of the demo.</p>
+<h2 id="interact-with-the-graph">Interact with the graph!</h2>
+<p>Click on graph to activate keyboard control.</p>
+<ul>
+<li>Camera navigation: mouse or arrow keys</li>
+<li>Cone angle: a/q</li>
+<li>Radius 1: s/w</li>
+<li>Radius 2: d/e</li>
+</ul>
+<canvas data-processing-sources="dandelin.pde 
+                                 Cone.pde 
+                                 CylinderNavigator.pde 
+                                 DandelinSpheres.pde">
+</canvas>
+<h2 id="mathematical-explanation">Mathematical Explanation</h2>
+<p>We learn in precalculus that the intersection of a plane with a cone can be an ellipse, parabola, or hyperbola, depending on the angles of the cone and the plane. Think about the ellipse case: how do we know that it’s actually an ellipse? Recall the geometric definition of an ellipse: the set of points in a plane where the sum of the distances to two designated points (foci) is constant. How do we know that this condition is satisfied by the intersection curve?</p>
+<p>First notice that there are two spheres inside the cone. Each one sits just inside the cone, so that the surface of the cone is tangent to the surface of the sphere at the points of contact, which form a circle (indicated in white). These two spheres uniquely determine the angle of the plane that is tangent to both. The intersection of the plane with the cone is indicated by the green ellipse. The two points of tangency are the two foci of the ellipse.</p>
+<p>Watch the orbit of the green ball, and the blue/red line segment that it lies on. The length of this line segment is constant as it goes around the cone, as it is the straight-line distance along the cone from one white circle to the other. In other words, the length of the blue segment plus the length of the red segment is constant.</p>
+<p>Now look at the two red line segments. The two segments share an endpoint and they are both tangent to the same sphere, so they are congruent (Two Tangent Theorem). Similarly, the two blue line segments are congruent.</p>
+<p>Finally, look at the red and blue line segments that are sitting in the plane of the green ellipse. They indicate the distances from the green ball to the two foci of the ellipse. As we observed earlier, the length of the blue segment plus the length of the red segment is constant. This is the geometric definition of an ellipse.</p>
+<p>For those of you who are interested in the details, here is a mathematical write up of the implementation [ <a href="DandelinSpheres_ImplementationNotes/DandelinSpheres_ImplementationNotes.html">html</a> <a href="DandelinSpheres_ImplementationNotes/DandelinSpheres_ImplementationNotes.pdf">pdf</a> ].</p>
+</div>
+<!--
+    after_body.html
+-->
+
+
+<footer>
+<hr/>
+
+<div id="footer-container">
+
+<div id="footer-left">
+<b>Explorations in Math and Code</b> <br/>
+Dr. Darren Kessner <br/>
+Marlborough School, Los Angeles <br/>
+</div>
+
+<div id="footer-right">
+<a href="https://github.com/dkessner/Explorations">https://github.com/dkessner/Explorations</a> <br/>
+<a href="http://stem.marlborough.org">http://stem.marlborough.org</a> <br/>
+<a href="http://marlborough.org">http://marlborough.org</a> <br/>
+</div>
+
+</div>
+
+</footer>
+
+</div>
+</body>
+</html>
